@@ -1,0 +1,57 @@
+/* Estilos CSS externo */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.titulo {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.row {
+    width: 400px;
+    height: 350px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.form {
+    width: 100%;
+    padding: 20px;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+label {
+    font-weight: bold;
+}
+button {
+    width: 100%;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.error-message {
+    color: red;
+    text-align: center;
+}

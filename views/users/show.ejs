@@ -1,0 +1,25 @@
+<%- include('../partials/header') %>
+
+<div class="container mt-5">
+  <h1>Detalhes do Usuário</h1>
+  <div class="card mt-3">
+    <div class="card-body">
+      <h5 class="card-title"><%= user.name %></h5>
+      <p class="card-text">ID: <%= user.id %></p>
+      <p class="card-text">Email: <%= user.email %></p>
+    </div>
+  </div>
+  <div class="mt-3">
+    <a href="/users" class="btn btn-primary">Voltar para a Lista</a>
+  </div>
+</div>
+
+<div class="mt-3">
+    <a href="/users/<%= user.id %>/edit" class="btn btn-warning">Editar</a>
+    <form action="/users/<%= user.id %>?_method=DELETE" method="POST" class="d-inline">
+      <button type="submit" class="btn btn-danger">Excluir</button>
+    </form>
+  </div>
+  
+
+<%- include('../partials/footer') %>
